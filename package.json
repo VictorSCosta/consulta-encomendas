@@ -4,11 +4,19 @@
   "description": "Teste de vaga front-end na nitronews",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "dev": "concurrently \"serve\" \"node-sass src/sass/main.scss src/css/style.css -w\" \"babel src/js/script.js -o src/js/bundle.js -w\"",
+    "build": "gulp"
   },
   "author": "Victor Costa",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "concurrently": "^5.2.0",
+    "gulp": "^4.0.2",
+    "gulp-minifier": "^3.5.0",
+    "node-sass": "^4.14.1",
+    "serve": "^11.3.2"
   }
 }

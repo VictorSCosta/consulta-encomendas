@@ -1,1 +1,4 @@
-node_modules/
+node_modules/*
+public/*
+src/js/bundle.js
+package-lock.json

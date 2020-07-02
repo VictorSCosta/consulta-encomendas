@@ -27,8 +27,27 @@
 * CSS = Todos em um único arquivo e minificado;
 * JS = Gerar em ES5 e minificado.
 
+## Requisitos
+* [npm](https://www.npmjs.com/get-npm)
+
 ## Desenvolvimento
-/* Coloque aqui os procedimentos para ambiente de desenvolvimento */
+Na raiz do projeto execute:
+
+```
+> npm install
+```
+
+para instalar as dependências e
+
+```
+> npm run dev
+```
+
+para vigiar os arquivos JS, SCSS e rodar a aplicação.
 
 ## Produção
-/* Coloque aqui os procedimentos para ambiente de produção */
+Para realizar o build do projeto:
+```
+> npm run build
+```
+os arquivos estarão disponíveis na pasta 'public/'.
