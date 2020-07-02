@@ -4,11 +4,11 @@
   "description": "Teste de vaga front-end na nitronews",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Victor Costa",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.26.9"
+    "node-sass": "^4.14.1"
   }
 }
